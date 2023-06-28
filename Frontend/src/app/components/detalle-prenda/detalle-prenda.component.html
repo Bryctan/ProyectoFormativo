@@ -1,0 +1,15 @@
+<div class="contenido">
+    <div class="prenda" *ngFor="let prenda of prenda">
+        <div class="imagen"><img [src]="prenda.imagen" alt="camiseta"></div>
+        <div class="informacion">
+            <h2><strong>{{prenda.nombre}}</strong></h2>
+            <p><strong>Precio prenda:</strong> $ {{prenda.precio}}</p>
+            <!-- <p><strong>Talla:</strong> L</p> -->
+            <!-- <p><strong>Estado de la prenda:</strong> 10/10</p> -->
+            <div class="botones">
+                <!-- <button routerLink="/detalle-compra">Hacer oferta</button> -->
+                <button routerLink="/detalle-compra">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>
